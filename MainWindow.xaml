@@ -5,9 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MLOS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" ScrollViewer.HorizontalScrollBarVisibility="Visible" FontFamily="Verdana" ScrollViewer.CanContentScroll="True" WindowState="Maximized" WindowStyle="None">
+        Title="MainWindow" Height="450" Width="800" FontFamily="Verdana" WindowState="Maximized" WindowStyle="None">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#FF00AEFF"/>
+            <GradientStop Color="White" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
-        <TextBlock HorizontalAlignment="Left" Text="What do you want to do next?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
-        <Button x:Name="closeButton" Content="Close this program" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="20px"/>
+        </Grid.RowDefinitions>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Button x:Name="internetButton" Background="White" Content="Internet"/>
+        </Grid>
+        <Button x:Name="startButton" Grid.Row="1" Content="Start">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FF0023FF"/>
+                    <GradientStop Color="#FF00138F" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

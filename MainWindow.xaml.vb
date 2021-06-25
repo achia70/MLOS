@@ -1,5 +1,5 @@
 ﻿Public Class MainWindow
-    Private Sub closeButton_Click(sender As Object, e As RoutedEventArgs) Handles closeButton.Click
+    Private Sub startButton_Click(sender As Object, e As RoutedEventArgs) Handles startButton.Click
         Close()
     End Sub
 End Class
