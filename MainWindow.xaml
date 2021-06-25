@@ -5,41 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MLOS"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowState="Maximized" WindowStyle="None" FontFamily="Tahoma">
+        Title="MainWindow" Height="450" Width="800" ScrollViewer.HorizontalScrollBarVisibility="Visible" FontFamily="Verdana" ScrollViewer.CanContentScroll="True" WindowState="Maximized" WindowStyle="None">
     <Grid>
-        <Grid.Background>
-            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                <GradientStop Color="#FF0097FF"/>
-                <GradientStop Color="White" Offset="1"/>
-            </LinearGradientBrush>
-        </Grid.Background>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*" />
-            <RowDefinition Height="20px" />
-        </Grid.RowDefinitions>
-        <Button x:Name="startButton" Grid.Row="1" Width="100px" HorizontalAlignment="Left" Content="Start" Foreground="White" BorderBrush="{x:Null}">
-            <Button.Background>
-                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
-                    <GradientStop Color="#FF050032" Offset="1"/>
-                    <GradientStop Color="#FF1700FF" Offset="0"/>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-                <RowDefinition Height="*" />
-            </Grid.RowDefinitions>
-            <Button x:Name="computerButton" Content="Computer"/>
-            <Button x:Name="internetButton" Grid.Column="1" Content="Internet"/>
-        </Grid>
+        <TextBlock HorizontalAlignment="Left" Text="What do you want to do next?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="24"/>
+        <Button x:Name="closeButton" Content="Close this program" HorizontalAlignment="Left" Margin="0,29,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
